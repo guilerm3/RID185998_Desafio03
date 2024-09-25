@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+
+        <section class="section-header">
+            <h1>Board de tarefas</h1>
+        <form id="create-todo-form">
+            <input 
+                type="text" 
+                id="task-name" 
+                class="task-name"
+                placeholder="    Nome da tarefa"
+                aria-label="    Nome da tarefa"
+                />
+            <input 
+                type="text" 
+                id="etiqueta" 
+                class="etiqueta"
+                placeholder="    Etiqueta"
+                aria-label="    Etiqueta"
+                />
+            <button id="save-task"type="submit" aria-label="Cadastrar tarefa" class="add-task-btn">+</button>
+        </form>
+        </section>
+
+
+
+
+        <section class="section-main">
+            <div class="div-item-task">
+                <ul id="todo-list"></ul>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="section-footer">
+            <div id="tasks-counter"></div>
+        </section>
+
+
+
+
+
+    </main>
+</body>
+</html>
