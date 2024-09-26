@@ -74,6 +74,7 @@ main{
     margin: 0 0 0 3.2rem;
     overflow: auto;
     color: #B1BACB;
+    height: 4rem;
 }
 .todo-list > li > span{
     margin:2.4rem 0 0 3.2rem;
@@ -88,4 +89,17 @@ main{
     border: none;
     border-radius: 0.8rem;
     margin: 2.95rem 0 0 2rem;
+    &:hover{
+        background: #8ba6e0;
+    }
+}
+.todo-list > li > li > p{
+    margin: 1rem 0 0 0;
+    display: inline-block;
+    border: #B1BACB 0.5px solid;
+    border-radius: 2rem;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+}
+.todo-list > li > li> span{
+    margin-left: 0.8rem;
 }
