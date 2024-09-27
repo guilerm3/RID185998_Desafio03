@@ -15,6 +15,7 @@ body{
     align-items: center;
 }
 main{
+    overflow-y:auto;
     width: 65rem;
     height: 58.4rem;
     background-color: white;
@@ -48,7 +49,7 @@ main{
     height: 4.5rem;
     border-radius: 0.8rem;
     border:#EEEEEE,solid,0.1rem;
-    margin: 0 1.6rem 0 0;
+    margin: 0 1.4rem 0 0;
     padding: 0;
 }
 
@@ -63,7 +64,7 @@ main{
     grid-template-columns: 42rem 16.3rem;
     grid-template-rows: 5rem 5rem;
     height: 10.3rem;
-    overflow: auto;
+    overflow: none;
     font-size: 1.6rem;
     border:#EEEEEE,solid,0.1rem;
     border-radius: 0.8rem;

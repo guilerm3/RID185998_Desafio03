@@ -20,11 +20,10 @@ const createTaskListItem = (task)=>{
         pLabel.textContent = task.etiqueta;
         liLabel.appendChild(pLabel);
         
+        doneButton.id = 'done-button'
         doneButton.textContent = 'Concluir'
 
-        getButton.onclick = function() {
-            pegaData(timeDate);
-        }
+        getButton.onclick = pegaData(timeDate)
 
         list.appendChild(li)
         li.appendChild(span)
