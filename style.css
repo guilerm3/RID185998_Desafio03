@@ -133,3 +133,37 @@ hr{
     color: #B1BACB;
     margin: 2.4rem 0 0 48.1rem;
 }
+
+@media only screen and (max-width: 400px) {
+    html{
+        font-size: 8px;
+    }
+    main{
+        width: 80%;
+        height: 80%;
+    }
+    footer{
+        width: 80%;
+    }
+    .section-header > form > button{
+        margin-top: 1.6rem;
+        width: 25.5rem;
+    }
+    .section-header > form > input{
+        margin-top: 1.6rem;
+    }
+    .todo-list > li{
+        height: 16rem;
+        width: 25rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .todo-list > li > li{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .section-header > h1{
+        font-size: 4rem;
+    }
+}
