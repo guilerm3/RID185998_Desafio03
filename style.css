@@ -13,14 +13,28 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 main{
     overflow-y:auto;
     width: 65rem;
-    height: 58.4rem;
+    height: 50.5rem;
     background-color: white;
-    border-radius: 0.8rem;
+    border-radius: 1.6rem;
     border: #EEEEEE,solid,0.2rem;
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+footer{
+    width: 65rem;
+    height: 8rem;
+    border: #EEEEEE,solid,0.2rem;
+    border-top: none;
+    background-color: #ffffff;
+    border-radius: 1.6rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 .section-header > h1{
     font-size: 4rem;
@@ -67,7 +81,7 @@ main{
     overflow: none;
     font-size: 1.6rem;
     border:#EEEEEE,solid,0.1rem;
-    border-radius: 0.8rem;
+    border-radius: 1.6rem;
     margin-bottom: 0.8rem;
 }
 .todo-list >li> li{
@@ -103,4 +117,19 @@ main{
 }
 .todo-list > li > li> span{
     margin-left: 0.8rem;
+}
+
+#done-img{
+    margin: 3.55rem 0 0 10rem;
+}
+
+hr{
+    margin: 1.6rem 3.2rem 0 3.2rem;
+    border-top:#EEEEEE;
+}
+
+#task-counter{
+    font-size: 1.6rem;
+    color: #B1BACB;
+    margin: 2.4rem 0 0 48.1rem;
 }

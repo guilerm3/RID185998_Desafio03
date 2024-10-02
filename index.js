@@ -13,15 +13,17 @@ const createTaskListItem = (task)=>{
         const span = document.createElement('span')             /* Span description */
         const timeDate = document.createElement('span')         /* Span DATA */
 
-        li.id = task.id
+        li.id = `${task.id}-li-principal`
+        span.id = `${task.id}-span-description`
 
         span.textContent = task.description
         const pLabel = document.createElement('p');
         pLabel.textContent = task.etiqueta;
         liLabel.appendChild(pLabel);
         
-        doneButton.id = 'done-button'
+        doneButton.id = `${task.id}-done-button`
         doneButton.textContent = 'Concluir'
+        doneButton.onclick = () => removeDoneTasks(task.id)
 
         getButton.onclick = pegaData(timeDate)
 
@@ -33,6 +35,20 @@ const createTaskListItem = (task)=>{
 
 }
 
+const removeDoneTasks = (taskId) =>{
+    tasks = tasks.filter(({ id }) => parseInt(id) !== parseInt(taskId))
+
+    document.getElementById(`${taskId}-li-principal`).removeChild(document.getElementById(`${taskId}-done-button`))
+    const img = document.createElement('img')
+    img.src = 'img/done.svg'
+    img.id = 'done-img'
+    const taskLi = document.getElementById(`${taskId}-li-principal`)
+    taskLi.appendChild(img)
+
+    const span = document.getElementById(`${taskId}-span-description`)
+    span.style.cssText = 'color:#8F98A8; text-decoration: line-through;'
+
+}
 
 const getNewTaskId = () =>{
     const lastId = tasks[tasks.length -1]?.id
