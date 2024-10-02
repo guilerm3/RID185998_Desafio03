@@ -3,6 +3,7 @@ let tasks = [
     {id: 2, description:'Criar endpoint para cadastro de tarefas', etiqueta:'backend'},
     {id: 3, description:'Implementar protótipo da listagem de tarefas', etiqueta:'ux'},
 ]
+let completedTasksCount = 0;
 
 const createTaskListItem = (task)=>{
         const list = document.getElementById('todo-list')       /* UL */
@@ -47,7 +48,14 @@ const removeDoneTasks = (taskId) =>{
 
     const span = document.getElementById(`${taskId}-span-description`)
     span.style.cssText = 'color:#8F98A8; text-decoration: line-through;'
+    
+    completedTasksCount++
+    taskCounter(completedTasksCount)
+}
 
+const taskCounter = (count)=>{
+    const counter = document.getElementById('task-counter')
+    counter.innerHTML = `${count} tarefas concluída`
 }
 
 const getNewTaskId = () =>{
@@ -87,6 +95,7 @@ window.onload = function (){
         createTaskListItem(task)
         
     })
+
 }
 
 function pegaData(timeDate) {
