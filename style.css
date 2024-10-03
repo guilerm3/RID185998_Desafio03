@@ -90,6 +90,7 @@ footer{
     overflow: auto;
     color: #B1BACB;
     height: 4rem;
+    padding-top: 1.5rem;
 }
 .todo-list > li > span{
     margin:2.4rem 0 0 3.2rem;
@@ -109,11 +110,10 @@ footer{
     }
 }
 .todo-list > li > li > p{
-    margin: 1rem 0 0 0;
-    display: inline-block;
+    display: inline;
     border: #B1BACB 0.5px solid;
     border-radius: 2rem;
-    padding: 0.2rem 1rem 0.2rem 1rem;
+    padding: 0.2rem 1rem;
 }
 .todo-list > li > li> span{
     margin-left: 0.8rem;
@@ -147,23 +147,44 @@ hr{
     }
     .section-header > form > button{
         margin-top: 1.6rem;
-        width: 25.5rem;
+        width: 91%;
     }
     .section-header > form > input{
         margin-top: 1.6rem;
+        width: 91%;
     }
     .todo-list > li{
-        height: 16rem;
-        width: 25rem;
+        font-size: 1.5rem;
+        height: 19rem;
+        width: 100%;
         display: flex;
         flex-direction: column;
-    }
-    .todo-list > li > li{
-        display: flex;
-        flex-direction: column;
-        
     }
     .section-header > h1{
-        font-size: 4rem;
+        font-size: 3.8rem;
     }
+    .todo-list > li > li {
+        margin-left: 2rem;
+        height: 7rem;
+        overflow: hidden;
+    }
+    .todo-list >li >span{
+        margin: 1.5rem 0 0 2rem;
+    }
+    .todo-list > li > li > span {
+        display: block;
+        margin: 1rem 0 0 0;
+    }
+    .todo-list > li > button {
+        width: 40%;
+        margin: 0 auto;
+    }
+    #task-counter{
+        margin: 2rem 0 0 18rem;
+    }
+    #done-img{
+        width: 10rem 0;
+        margin: 0 auto;
+    }
+    
 }
