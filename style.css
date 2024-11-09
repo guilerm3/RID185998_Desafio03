@@ -134,7 +134,7 @@ hr{
     margin: 2.4rem 0 0 48.1rem;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 780px) {
     html{
         font-size: 8px;
     }
